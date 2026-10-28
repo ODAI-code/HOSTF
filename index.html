@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover and compare student hostels around the University of Cape Coast with HOSTFind.">
+  <meta property="og:title" content="HOSTFind">
+  <meta property="og:description" content="Find student accommodation around UCC, Cape Coast.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta property="og:type" content="website">
+  <title>HOSTFind</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container navbar">
+<a class="brand" href="index.html" aria-label="HOSTFind home">
+<img src="/images/logo/hostfind-logo.png" alt="HOSTFind — Find Your Hostel. Simplify Your Stay." class="brand-logo"></a>
+    
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="locations.html">Locations</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-small" href="hostels.html">Find a Hostel</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Student accommodation, made simpler</span>
+      <h1>Find Your Perfect Hostel Around UCC</h1>
+      <p>Discover student hostels around the University of Cape Coast, compare prices, explore rooms and connect with hostel managers.</p>
+      <form class="search-box" data-hostel-search>
+        <label class="hidden" for="home-search">Search hostel name or location</label>
+        <input id="home-search" name="q" placeholder="Search hostel name or location..." autocomplete="off">
+        <button class="btn btn-gold" type="submit">Search</button>
+      </form>
+      <div class="quick-filters" aria-label="Quick location filters">
+        <a class="chip" href="hostels.html?q=Amamoma">Amamoma</a><a class="chip" href="hostels.html?q=Kwaprow">Kwaprow</a>
+        <a class="chip" href="hostels.html?q=Apewosika">Apewosika</a><a class="chip" href="hostels.html?q=Ola">Ola</a>
+        <a class="chip" href="hostels.html?q=Abura">Abura</a>
+        <a class="chip" href="hostels.html?q=North%20Campus">Ayensu</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <span class="eyebrow">Your search starts here</span>
+      <h2>Compare before you decide.</h2>
+      <p>Explore room information, amenities and annual rent. Confirm availability and inspect a hostel before paying rent.</p>
+      <a class="btn btn-gold" href="hostels.html">Browse hostels →</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container stats-grid">
+    <div class="stat-card"><strong>25</strong><span>Hostel listings</span></div>
+    <div class="stat-card"><strong>6</strong><span>Location categories</span></div>
+    <div class="stat-card"><strong>GH₵47</strong><span>Contact unlock fee</span></div>
+  </div>
+</section>
+<section class="section section-white">
+  <div class="container">
+    <div class="section-heading"><div>
+      <h2>Explore Hostels by Location</h2>
+      <p>Choose an area around UCC to start exploring.</p>
+    </div>
+    <a class="btn btn-secondary" href="locations.html">All locations</a></div>
+    <div class="location-grid" id="home-locations"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-heading"><div><h2>Featured Hostels</h2>
+      <p>Explore available listings and compare your options.</p>
+    </div><a class="btn btn-secondary" href="hostels.html">View all hostels</a>
+  </div>
+    <div class="hostel-grid" data-featured-hostels></div>
+  </div>
+</section>
+
+<section class="section section-white" id="how-it-works">
+  <div class="container">
+    <div class="section-heading"><div><h2>How HOSTFind Works</h2>
+      <p>Simple steps from searching to contacting a manager.</p></div></div>
+    <div class="feature-grid">
+
+      <article class="feature-card"><span class="step-number">1</span>
+        <h3>Search a hostel</h3><p>Search by hostel name, location, room type or amenities.</p>
+      </article>
+
+      <article class="feature-card"><span class="step-number">2</span>
+        <h3>Explore the room</h3>
+        <p>Review room photos, video, rent, amenities and rules.</p>
+      </article>
+
+      <article class="feature-card"><span class="step-number">3</span>
+        <h3>Unlock contact details</h3>
+        <p>Pay the GH₵35.00 platform unlock fee, separate from rent, then contact the manager after server-side verification.</p>
+      </article>
+
+    </div>
+    <p class="notice" style="margin-top:1.2rem">Before paying hostel rent, independently confirm the manager's identity, availability, room condition and payment instructions. Confirm all listing details with the property manager before making a payment.</p>
+  </div>
+  
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>HOSTFind</h3><p>Helping students discover accommodation around the University of Cape Coast.</p></div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a>
+        <a href="hostels.html">Find Hostels</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a></div>
+      <div><h4>Student Resources</h4><a href="index.html#how-it-works">How It Works</a>
+        <a href="faq.html">FAQs</a>
+        <a href="list-your-hostel.html">List Your Hostel</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </div>
+      <div><h4>Contact</h4><a data-whatsapp href="#">WhatsApp Support</a>
+        <a href="mailto:support@example.com">support.hostfind@gmail.com</a>
+        <span> Cape Coast, Ghana</span>
+        <h4>Social Media</h4>
+       <a href="https://chat.whatsapp.com/JZxlJeC2Y0J4j2dab7EOkl" aria-label="WhatsApp">WhatsApp</a></div>
+        <a href="tiktok.com/@hostfind0" aria-label="TikTok">TikTok</a></div>
+
+    </div>
+    <div class="disclaimer">HOSTFind is an independent accommodation directory and is not affiliated with the University of Cape Coast unless formally authorized. 
+      Confirm listing details with the property manager before making payments.</div>
+    <div class="copyright">© <span data-year>2026</span> HOSTFind. All Rights Reserved.</div>
+  </div>
+</footer>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="Chat with Support"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>Chat with Support</span></a>
+<script src="js/main.js"></script>
+<script src="js/hostel-data.js">
+</script><script src="js/search.js">
+</script><script src="js/home.js"></script>
+</body>
+</html>

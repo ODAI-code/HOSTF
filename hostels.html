@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover and compare student hostels around the University of Cape Coast with HOSTFind.">
+  <meta property="og:title" content="Find Hostels | HOSTFind">
+  <meta property="og:description" content="Find student accommodation around UCC, Cape Coast.">
+  <meta property="og:type" content="website">
+  <title>Find Hostels | HOSTFind</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container navbar">
+<a class="brand" href="index.html" aria-label="HOSTFind home">
+<img src="/images/logo/hostfind-logo.png" alt="HOSTFind — Find Your Hostel. Simplify Your Stay." class="brand-logo"></a>
+    
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="locations.html">Locations</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-small" href="hostels.html">Find a Hostel</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+
+<section class="container page-heading"><h1>Find Hostels Around UCC</h1><p>Search, filter and compare hostels by
+   location, price, room type and amenities.</p></section>
+<section class="container" style="padding-bottom:3rem">
+<div class="field hostel-search-field">
+  
+  <label for="hostel-search">Search by name, location, room type or amenity</label>
+
+  <input
+    id="hostel-search"
+    type="search"
+    placeholder="Try Amamoma, Mercy, Wi-Fi..."
+    autocomplete="off"
+    aria-autocomplete="list"
+    aria-controls="hostel-search-suggestions"
+  >
+
+  <div
+    id="hostel-search-suggestions"
+    class="search-suggestions"
+    role="listbox"
+    aria-label="Matching hostels"
+    hidden
+  ></div>
+</div>
+
+<div class="filters">
+    <div class="field">
+      <label for="filter-location">Location</label>
+      <select id="filter-location"><option value="">All locations</option></select></div>
+
+    <div class="field">
+      <label for="min-price">Minimum price (GH₵)</label>
+      <input id="min-price" type="number" min="0" placeholder="0"></div>
+
+    <div class="field">
+      <label for="max-price">Maximum price (GH₵)</label>
+      <input id="max-price" type="number" min="0" placeholder="Any"></div>
+
+    <div class="field">
+      <label for="filter-room">Room type</label>
+      <select id="filter-room"><option value="">All room types</option>
+      <option>Single</option><option>2-in-a-room</option><option>3-in-a-room</option>
+      <option>4-in-a-room</option></select></div>
+    <div class="field"><label for="filter-availability">Availability</label>
+
+<select id="filter-availability">
+  <option value="">Any status</option>
+  <option value="available">Available</option>
+  <option value="limited">Limited Availability</option>
+  <option value="full">Full</option>
+  <option value="not_verified">Confirm with manager</option>
+</select>
+</div>   
+ <div class="field" style="grid-column:1/-1">
+  <label>Amenities (must match all selected)</label><div class="checkbox-row">
+      <label><input type="checkbox" name="amenity-filter" value="Wi-Fi"> Wi-Fi</label>
+      <label><input type="checkbox" name="amenity-filter" value="Water"> Water</label>
+      <label><input type="checkbox" name="amenity-filter" value="Security"> Security</label>
+      <label><input type="checkbox" name="amenity-filter" value="Kitchen"> Kitchen</label><label>
+      <input type="checkbox" name="amenity-filter" value="Parking"> Parking</label>
+    </div>
+  </div>
+    <div class="field">
+      <label for="sort-hostels">Sort by</label>
+      <select id="sort-hostels"><option value="">Recommended</option>
+      <option value="price-low">Price: Low to High</option>
+      <option value="price-high">Price: High to Low</option>
+      <option value="name">Name: A–Z</option><option value="location">Location: A–Z</option></select></div>
+    <div class="field" style="justify-content:end"><button class="btn btn-secondary" id="reset-filters" type="button">Reset filters</button></div>
+  </div>
+  <p class="muted" data-results-count aria-live="polite"></p>
+  <div class="hostel-grid" data-hostel-grid></div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>HOSTFind</h3>
+      <p>Helping students discover accommodation around the University of Cape Coast.</p>
+    </div>
+      <div><h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="hostels.html">Find Hostels</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a></div>
+      <div><h4>Student Resources</h4>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="faq.html">FAQs</a><a href="list-your-hostel.html">List Your Hostel</a>
+        <a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a></div>
+      <div><h4>Contact</h4><a data-whatsapp href="#">WhatsApp Support</a><!-- Replace the email and social links below with your real business details before launch. --><a href="mailto:support@example.com">support@example.com</a><span> Cape Coast, Ghana</span><h4>Social Media</h4><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a></div>
+    </div>
+    <div class="disclaimer">HOSTFind is an independent accommodation directory and is not 
+      affiliated with the University of Cape Coast unless formally authorized. 
+      Confirm listing details with the property manager before making payments.
+    </div>
+    <div class="copyright">© <span data-year>2026</span> HOSTFind. All Rights Reserved.</div>
+  </div>
+</footer>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="Chat with Support">☏ <span>Chat with Support</span></a>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/hostel-data.js"></script>
+<script src="js/search.js"></script>
+
+
+</body>
+</html>

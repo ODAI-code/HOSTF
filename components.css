@@ -1,0 +1,6 @@
+/* Shared reusable component enhancements */
+.hr { border: 0; border-top: 1px solid var(--line); margin: 1.2rem 0; }
+.inline-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+dl.details { display: grid; grid-template-columns: minmax(110px, .7fr) 1.3fr; gap: .5rem .8rem; }
+dl.details dt { color: var(--muted); }
+dl.details dd { margin: 0; font-weight: 650; }

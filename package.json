@@ -1,0 +1,21 @@
+{
+  "name": "hostfind-ucc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly UCC hostel directory with Paystack backend verification",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "better-sqlite3-session-store": "^0.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0"
+  }
+}

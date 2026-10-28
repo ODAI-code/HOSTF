@@ -1,0 +1,6 @@
+/* Responsive refinements live in style.css media queries.
+   Keep this file for easy future breakpoint adjustments. */
+@media (max-width: 420px) {
+  .hero h1 { font-size: 2.1rem; }
+  .btn { padding: .68rem .8rem; }
+}

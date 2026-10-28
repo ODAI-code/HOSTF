@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#e9eef5"/>
+  <rect x="150" y="180" width="900" height="440" rx="24" fill="#d3dce9"/>
+  <path d="M220 360 L600 120 L980 360" fill="none" stroke="#7286a5" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="300" y="350" width="600" height="270" rx="12" fill="#f8fafc" stroke="#7286a5" stroke-width="10"/>
+  <rect x="390" y="420" width="150" height="200" fill="#d3dce9"/>
+  <rect x="620" y="420" width="190" height="120" fill="#d3dce9"/>
+  <text x="600" y="690" font-family="Arial, sans-serif" font-size="34" text-anchor="middle" fill="#344765">DEMO HOSTEL IMAGE</text>
+</svg>
